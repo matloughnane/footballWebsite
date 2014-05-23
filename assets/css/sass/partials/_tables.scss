@@ -1,0 +1,42 @@
+/* CSV Table Classes */
+TABLE.CSVTable {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/* Header */
+TABLE.CSVTable THEAD TR {
+	color: $bkg_color_lighter;
+	background: $main_color_dark;
+}
+
+TABLE.CSVTable TH {
+	font-size: 1em;
+}
+
+/* Table Cells */
+TABLE.CSVTable TD, TABLE.CSVTable TH {
+	width: 25%;
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid $bkg_color_lighter;
+	border-top: 1px solid transparent;
+}
+/* Default background color for rows */
+TABLE.CSVTable TR {
+	background: $bkg_color_lighter;
+}
+/* Background color for odd rows */
+TABLE.CSVTable TR.odd {
+	background: $main_color_light;
+}
+/* Hover color for all rows */
+// TABLE.CSVTable TR:hover {
+// 	color: $bkg_color_lighter;
+// 	background: $main_color_dark;
+// }
+
+/* Source code */
+// .source {
+// 	background-color: #FAFAFA; border: 1px solid #999999
+// }

@@ -1,0 +1,168 @@
+
+/*
+==================DESKTOP NAVIGATION====================
+*/
+
+.nav {
+	background-color: $main_color_dark;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	ul {
+		padding: 0px;
+		margin: 0px;		
+	}
+	li {
+		display: inline;
+		padding: 10px;
+		margin: 0px;
+		&:hover {
+			box-shadow: 0px -5px 0px 0px $main_color_accent inset;
+		}
+		&:active {
+			background-color: $main_color;
+		}
+	}
+	a {
+		font-size: 1em;
+		color: $bkg_color_lighter;
+		display: inline-block;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 10px 30px;
+		margin: 0px;
+	}
+}
+
+/*
+==================DESKTOP NAVIGATION====================
+*/
+
+.nav-alt {
+	background-color: $main_color_accent;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	ul {
+		padding: 0px;
+		margin: 0px;		
+	}
+	li {
+		display: inline;
+		padding: 10px;
+		margin: 0px;
+		&:hover {
+			box-shadow: 0px -5px 0px 0px $main_color_dark inset;
+		}
+		&:active {
+			background-color: $main_color;
+		}
+	}
+	a {
+		font-size: 0.9em;
+		color: $bkg_color_lighter;
+		display: inline-block;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 10px 30px;
+		margin: 0px;
+	}
+}
+
+/*
+==================HIDDEN NAVIGATION====================
+*/
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+}
+
+.menu-link {
+	color: $bkg_color_lighter;
+	position: absolute;
+  	font-size: 1em;
+  	padding: 0.5em 0.5em;
+  	background-color: $main_color_dark;
+  	&:hover {
+		background-color: $main_color_accent;
+  	}
+  	&:active {
+		background-color: $main_color;
+  }
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.125em;
+  margin: .5em 0;
+}
+
+.btn-list {
+  margin: 3em 0;
+  text-align: center;
+  li {
+	display: inline-block;
+  	&:first-of-type {
+  		margin-right: 1em;
+  	}
+  }
+}
+
+// .btn {
+//   padding: 1em .5em;
+//   text-align: center;
+//   border-radius: 6px;
+//   &:hover {
+// 	background: #16a085;
+//   }
+//   &:active {
+//   	background: #16a085;
+//   }
+// }
+
+/*
+==================HIDDEN NAVIGATION PANEL====================
+*/
+
+.panel {
+	text-transform: uppercase;
+	background: $main_color;
+	z-index: 9999;
+	position: fixed;
+	left: -15.625em; /*or width of your navigation panel*/
+	width: 15.625em; /*should match the above value*/
+	  ul {
+	  	list-style-type: none;
+	  	padding: 0px;
+	  	margin: 0px;
+	  li {
+	  	padding: 1em;
+	  	box-shadow: 0px -1px 0px 0px $main_color_accent inset;
+	  	&:hover {
+	  		background-color: $main_color_accent;
+	  	}
+	  }
+	  a {
+	  	color: $bkg_color;
+	  	padding: 1em;
+	  	&.nav_link {
+	  		font-size: 1em;
+	  	}
+	  	}
+	}
+}
+
+.nav-icon {
+  margin-right: 6px;
+}
+
+
+@media screen and (max-width: 968px) {
+	.nav-alt li a {
+		font-size: 0.7em;
+	}
+}
+
