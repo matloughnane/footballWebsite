@@ -6,7 +6,7 @@ $(document).ready(function(){
     };
 
     $('.arranmore_test').spectragram('getRecentTagged',{
-        query: 'arranmore',
+        query: 'arranchallenge',
         max: 12,
         size: 'medium',
         wrapEachWith: '<span class="insta_photo";"></span>'

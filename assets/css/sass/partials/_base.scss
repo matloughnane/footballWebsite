@@ -52,6 +52,10 @@ a {
 		}
 }
 
+.indent {
+	padding-left:10px;
+}
+
 .italics {
 	font-style: italic;
 	font-size: 1em;
@@ -226,7 +230,7 @@ img.banner {
 	.wrapper {
   		position: relative;
   		margin: 0 auto;
-  		padding: 10px;
+  		// padding: 10px;
 	}
 }
 
@@ -280,6 +284,6 @@ img.banner {
 	.wrapper {
   		position: relative;
   		margin: 0 auto;
-  		padding: 10px;
+  		// padding: 10px;
 	}
 }

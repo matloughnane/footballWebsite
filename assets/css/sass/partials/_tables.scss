@@ -2,6 +2,7 @@
 TABLE.CSVTable {
 	border-collapse: collapse;
 	width: 100%;
+	// border-bottom: 1px solid $bkg_color_lighter;
 }
 
 /* Header */
@@ -17,9 +18,9 @@ TABLE.CSVTable TH {
 /* Table Cells */
 TABLE.CSVTable TD, TABLE.CSVTable TH {
 	width: 25%;
-	padding: 10px;
+	padding: 5px;
 	text-align: left;
-	border-bottom: 1px solid $bkg_color_lighter;
+	border-bottom: 1px solid $main_color_light;
 	border-top: 1px solid transparent;
 }
 /* Default background color for rows */
